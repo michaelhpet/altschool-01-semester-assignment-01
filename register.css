@@ -46,7 +46,8 @@ main > aside {
   background-color: #fff6ee;
 }
 
-.hero .logo {
+.hero a.logo {
+  display: block;
   align-self: flex-start;
 }
 
@@ -185,4 +186,18 @@ form button {
 
 form button:hover {
   filter: drop-shadow(rgb(255, 243, 233) 5px 5px 5px) invert(20%);
+}
+
+@media (max-width: 900px) {
+  main > aside {
+    width: 100%;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  .application_form_container {
+    padding: 30px;
+  }
 }
